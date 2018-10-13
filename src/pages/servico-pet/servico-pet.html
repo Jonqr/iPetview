@@ -1,0 +1,38 @@
+
+<ion-content class="outer-content">
+  <!-- Retorna mês e dia-->
+
+  <button ion-button block (click)="openMenu()">  Selecione um funcionario !  </button>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Mês e Dia</ion-label>
+      <ion-datetime displayFormat="DD MMMM"></ion-datetime>
+    </ion-item>
+
+    <!-- Retorna hora-->
+  <ion-list>
+    <button ion-item (click) = "" >
+      <h2>Funcionario</h2>
+      <p>Horario</p>
+      <p>Preco: R$: 15,00</p>
+    </button>
+  </ion-list>
+
+</ion-list>
+<ion-row>
+  <button ion-button block outline round color="secondary" style="color:black">
+    Agendar
+  </button>
+</ion-row>
+
+</ion-content>
+
+<style>
+  ion-list:first-child {
+    margin-top: 32px;
+  }
+  ion-list + ion-list {
+    margin-top: 0;
+  }
+</style>
